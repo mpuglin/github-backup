@@ -3,11 +3,8 @@ shell script to backup repositories for an organization
 
 
 ## Explanation:
-### Pagination Loop: 
-The script uses a while loop to fetch repositories page by page. The page variable is used to track the current page number.
-
-### API Request with Pagination: 
-The API request includes the page parameter to fetch repositories from the current page. The per_page parameter is set to 100 to fetch up to 100 repositories per page.
+- **Pagination Loop: ** The script uses a while loop to fetch repositories page by page. The page variable is used to track the current page number.
+- **API Request with Pagination: **  The API request includes the page parameter to fetch repositories from the current page. The per_page parameter is set to 100 to fetch up to 100 repositories per page.
 
 ### Breaking the Loop: 
 If no more repositories are returned (i.e., the response is empty), the loop breaks.
